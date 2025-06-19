@@ -1,0 +1,184 @@
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.profile-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    position: relative;
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 12px;
+    padding: 3px 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    cursor: pointer;
+}
+
+.username-location {
+    flex-grow: 1;
+}
+
+.two-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.two-columns .form-group {
+    flex: 1;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+}
+
+.country-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px 0 0 4px;
+    padding: 0 10px;
+    height: 38px;
+}
+
+.flag {
+    margin-right: 3px;
+}
+
+.arrow {
+    font-size: 8px;
+    color: #666;
+}
+
+.phone-input input {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: "▼";
+    font-size: 10px;
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    color: #666;
+    pointer-events: none;
+}
+
+select {
+    appearance: none;
+}
+
+.date-input,
+.wallet-input {
+    position: relative;
+}
+
+.calendar-icon,
+.copy-icon {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    color: #666;
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.btn-primary {
+    background-color: #5e5df0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #4b4acf;
+}
+
+.btn-secondary:hover {
+    background-color: #f0f0f0;
+}

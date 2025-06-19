@@ -1,0 +1,18 @@
+// Version: 1.0.0
+type Picture =
+  {
+    date : ?Text;
+    description : ?Text;
+    id : Text;
+    image : Blob;
+    ipfsUrl : ?Text;
+    location : ?Text;
+    name : Text;
+    price : ?Text
+  };
+actor {
+  stable var featuredEvents : [Picture];
+  stable var nearbyPlaces : [Picture];
+  stable var pictures : [Picture];
+  stable var topOrganizations : [Picture]
+};

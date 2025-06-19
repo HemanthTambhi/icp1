@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "frontend": {
+      "type": "assets",
+      "source": ["dist"],
+      "build": ["npm run build"]
+    },
+    "backend":{
+      "main": "./masterverses-backend/src/masterverses-backend-backend/main.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}

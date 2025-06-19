@@ -1,0 +1,39 @@
+service : {
+  addPicture: (text, blob, opt text, opt text, opt text, opt text) -> (text);
+  getFeaturedEvents: () ->
+   (vec
+     record {
+       date: opt text;
+       description: opt text;
+       id: text;
+       ipfsUrl: opt text;
+       location: opt text;
+       name: text;
+     }) query;
+  getNearbyPlaces: () ->
+   (vec
+     record {
+       date: opt text;
+       description: opt text;
+       id: text;
+       ipfsUrl: opt text;
+       location: opt text;
+       name: text;
+       price: opt text;
+     }) query;
+  getThreePicsWithDetails: () ->
+   (vec
+     record {
+       date: opt text;
+       description: opt text;
+       id: text;
+       image: blob;
+       ipfsUrl: opt text;
+       location: opt text;
+       price: opt text;
+     }) query;
+  getTopOrgs: () -> (vec record {
+                           ipfsUrl: opt text;
+                           name: text;
+                         }) query;
+}
